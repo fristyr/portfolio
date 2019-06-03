@@ -1,0 +1,114 @@
+.nav-pages {
+    position: absolute;
+    top: 50%;
+    transform: translate(-40%) rotate(-90deg) ;
+    max-width: 270px;
+    max-height: 15px;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 5;
+
+    
+    @media screen and (max-width: 800px) {
+      display: none !important;
+  }
+}
+
+.nav-pages__footer {
+  @media screen and (max-width: 860px) {
+    display: none !important;
+}
+}
+
+.refs-box__link_footer {
+  border: 3px solid var(--color-3) !important;
+}
+
+.pages__name_footer {
+  color: var(--color-3) !important;
+}
+
+.pages__name_footer:first-child {
+  color: #26BF87 !important;
+}
+
+
+.refs-decor {
+    justify-content: space-between;
+}
+
+.refs-decor a:not(:last-child) {
+    margin-right: 10px;
+}
+
+.refs-box__link {
+    display: block;
+    border-radius: 50%;
+    border: 3px solid var(--color-5);
+    width: 16px;
+    height: 16px;
+}
+
+.refs-box__link:not(:last-child) {
+    margin-right: 10px;
+}
+
+.refs-decor__dotted {
+    max-width: 40px;
+    width: 100%;
+    border-top: 3px dashed var(--color-5);
+}
+
+.refs-decor__active {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--color-1);
+    animation: radial-pulse 1.5s infinite;
+    cursor: pointer;
+}
+
+
+@keyframes radial-pulse {
+    0% {
+      box-shadow: 0 0 0 0px var(--color-1-a);
+    }
+   
+    100% {
+      box-shadow: 0 0 0 12px var(--color-1-b);
+    }
+  }
+
+.pages {
+    justify-content: space-around;
+}
+
+.pages__name {
+    font-family: "Dosis" , sans-serif;
+    font-weight: 500;
+    font-size: 0.85em;
+    letter-spacing: 2px;
+    color: var(--color-5);
+}
+
+.pages__name:first-child {
+  color: var(--color-4);
+}
+
+.page-link {
+    position: relative;
+  }
+  
+  
+  .refs-box__link:hover {
+    opacity: 1;
+  }
+
+
+  .refs-box__link:hover {
+    background-color: var(--color-1);
+  }
+
+  .helper_footer:hover {
+    color: var(--color-3) ;
+  }

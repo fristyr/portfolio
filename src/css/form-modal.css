@@ -1,0 +1,95 @@
+.form-modal {
+    display: none;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 30px#26bf87;
+}
+
+.form-modal_active {
+    display: block;
+}
+
+.postcard {
+    border-radius: 15px;
+    padding: 20px;
+    background-color: var(--color-5);
+    border: 10px solid transparent;
+    font-family: "Dosis",sans-serif;
+    color: #605756;
+  }
+
+.postcard_close {
+    position: absolute;
+    z-index: 20;
+    right: 2%;
+    top: 2%;
+    width: 25px;
+    height: 25px;
+    background-color: var(--color-3);
+    border: 1px solif var(--color-1);
+    color: var(--color-1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+  .form-row {
+      margin-bottom: 15px;
+    }
+  .form-row__inp, 
+  .form-row__inp, 
+  .form-row__inp {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 0.5rem;
+    padding: 0 10px;
+    line-height: 35px;
+    border-width: 0;
+    outline: none;
+    background: transparent url(../img/bg-form.png) bottom left repeat-x;
+    background-size: 8px 35px;
+    font-family: "Muli",sans-serif;
+    color: var(--color-3);
+  }
+  .form-row textarea {
+    background-attachment: local;
+    background-repeat: repeat;
+    resize: none;
+  }
+  .form-row input[type="submit"],
+  .form-row input[type="reset"] {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-width: 0;
+    font-family: "Dosis",sans-serif;
+    font-size: 1em;
+    cursor: pointer; 
+    letter-spacing: 1px;
+    background-color: var(--color-3);
+    border: 1px solif var(--color-1);
+    color: var(--color-1);
+    border-radius: 10px;
+    transition: 1s cubic-bezier(.165, .84, .44, 1);
+  }
+  .form-row input[type="submit"] {
+      margin-right: 1rem;
+  }
+  .form-row input[type=submit]:hover,
+  .form-row input[type="reset"]:hover {
+    box-shadow: 0 0 10px #26bf87;
+    color: var(--color-5);
+    }
+
+  .form-row__lb{
+      font-size: 2em;
+      transition: all 0.5s;
+  }
+
+  .form-row__inp_wrong {
+    box-shadow: 0 0 10px red;
+  }
+

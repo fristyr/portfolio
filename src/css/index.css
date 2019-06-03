@@ -1,0 +1,78 @@
+:root {
+    --color-1: #4bf2b5; 
+    --color-1-b: rgb(75, 242, 181, 0);   
+    --color-1-a: rgba(75, 242, 181, 0.5);                                    
+    --color-2: #26bf87;                               
+    --color-3: rgb(46, 54, 64);  
+    --color-3-a: rgba(46, 54, 64, 0.97);  
+    --color-4: rgb(75, 242, 181);  
+    --color-5: #d9d3c1;  
+    --light-persik: rgb(242, 196, 155);    
+    --light-persik-a: rgba(255, 255, 255);                                       
+  }
+
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.body {
+    max-width: 1920px;
+    margin: 0 auto !important;
+    background-color: #0b0c10;
+    color: #333333;
+    font-family: "Dosis" , sans-serif;
+    @media screen and (min-width: 1922px) {
+      
+        box-shadow: 0 0 10px rgba(255,255,255,.5);
+    }
+}
+
+section,
+footer {
+    position: relative;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.page-index {
+    position: absolute;
+    top: -25%;
+    left: 45%;   
+    font-family: "Dosis" , sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 2px;
+    color: var(--color-5);
+}
+
+.index__two {
+ position: static;
+}
+
+
+

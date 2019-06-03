@@ -1,0 +1,29 @@
+    
+@font-face {
+    font-family: Dosis;
+    src: url(../fonts/Dosis-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: Dosis;
+    src: url(../fonts/Dosis-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: Dosis;
+    src: url(../fonts/Dosis-Bold.ttf);
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: Muli;
+    src: url(../fonts/Muli-Italic.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: SourceSansPro;
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+    font-weight: 400;
+}

@@ -1,0 +1,22 @@
+
+.page-link:hover:after {
+    content: attr(data-tooltip);
+    display: block;
+    position: absolute;
+    font-family: "Muli",sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #4BF2B5;
+    background: var(--color-3);
+    padding: 4px 10px 4px 10px;
+    color: var(--color-5);
+    z-index: 51;
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+    transform: translate(-40%,3.5rem) rotate(90deg);
+}
+
+.refs-decor__active:hover:after {
+    content: attr(data-tooltip);
+    transform: translate(-40%,4.8rem) rotate(90deg);
+}

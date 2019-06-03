@@ -1,0 +1,136 @@
+.main-modal {
+    position: fixed;
+    width: 100%;
+    min-height: 650px;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    overflow: hidden;
+    display: none;
+    transition: all 1s;
+}
+
+
+.main-modal_active {
+    display: block;
+}
+
+
+
+.main-modal__close {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    font-family: "Muli",sans-serif;
+    right: 5%;
+    top: 10%;
+    z-index: 15;
+    opacity: 0;
+    background: transparent;
+    color: antiquewhite;
+    border: 1px solid green;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    @media screen and (max-width: 500px) {
+      width: 40px;
+      height: 40px;
+    }
+    
+}
+
+.main-modal__close_active {
+  opacity: 1;
+}
+
+.main-modal__block {
+    background-color: var(--color-3-a);
+    width: 100%;
+    height: 25%;
+}
+
+.main-modal__block:nth-child(1) {
+    animation: modal-line-animation 0.2s linear ;
+  }
+.main-modal__block:nth-child(2) {
+    animation: modal-line-animation 0.4s linear ;
+  }
+.main-modal__block:nth-child(3) {
+    animation: modal-line-animation 0.6s linear ;
+  }
+.main-modal__block:nth-child(4) {
+    animation: modal-line-animation 0.8s linear ;
+  }
+.main-modal__block:nth-child(5) {
+    animation: modal-line-animation 1s linear ;
+  }
+
+
+  @keyframes modal-line-animation {
+    0% {
+      transform: translateX(100%);
+    }
+  }
+
+.main-modal__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    font-family: "Muli",sans-serif;
+    transition: all 0.8s;
+}
+
+.main-modal__content_active {
+    opacity: 1;
+  
+}
+
+
+.main-modal__content_link {
+    color: var(--color-5);
+    font-weight: bold;
+    font-size: 3em;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.6s;
+    padding-bottom: 10px;
+    @media screen and (max-width: 860px) {
+      font-size: 2.2em;
+    }
+}
+
+
+.main-modal__content_link:not(:last-child) {
+    margin-bottom: 1.3em;
+}
+
+.main-modal__content_link::before {
+    content: "";
+    width: 0;
+    height: 0.1em;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background: var(--color-1);
+    transition: all 0.3s;
+}
+
+.main-modal__content_link:hover {
+    color: var(--color-1);
+}
+
+.main-modal__content_link:hover::before {
+    width: 100%;
+    left: 0;
+    background: var(--color-1);
+}
+

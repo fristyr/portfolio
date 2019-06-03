@@ -1,0 +1,129 @@
+.mobile-index {
+    transform: translate(-50%,-50%);
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border-radius: 3px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    overflow: hidden;
+  }
+
+.mobile-index_two {
+    transform: translate(0,10%);
+    @media screen and (max-width: 801px) {
+      transform: translate(-50%);
+    }
+    @media screen and (max-width: 600px) {
+      transform: translate(-10%);
+    }
+    @media screen and (max-width: 550px) {
+      transform: translate(30%);
+    }
+}
+
+.mobile-index_three {
+  position: absolute;
+  top: 20%;
+  left: -75%;
+  transform: translate(0);
+  @media screen and (max-width: 750px) {
+    top: 15%;
+    left: 50%;
+    transform: translate(-50% , 0%)
+  }
+
+}
+
+.mobile-index_four {
+  transform: translate(10%,-20%);
+}
+
+.mobile-index_five {
+  transform: translate(80%,-20%);
+}
+  
+  
+  .mobile-index_line:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, var(--color-1),  var(--light-persik));
+    animation: animation-line-one 4s linear infinite;
+    
+  }
+  
+  @keyframes animation-line-one {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .mobile-index_line:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to right, var(--color-1),  var(--light-persik));
+    animation: animation-line-two 4s linear infinite;
+    animation-delay: 2s;
+  }
+  
+  @keyframes animation-line-two {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
+  .mobile-index_line:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, var(--color-1),  var(--light-persik));
+    animation: animation-line-three 4s linear infinite;
+  }
+  
+  @keyframes animation-line-three {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .mobile-index_line:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to right, var(--color-1),  var(--light-persik));
+    animation: animation-line-four 4s linear infinite;
+    animation-delay: 2s;
+  }
+  
+  @keyframes animation-line-four {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+
+.mobile-index,
+.mobile-index_line {
+    @media screen and (min-width: 798px){
+        display: none;
+     }
+  }

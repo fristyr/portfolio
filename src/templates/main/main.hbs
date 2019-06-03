@@ -1,0 +1,80 @@
+<main class="main ">
+    <section class="author-wrapp flex-row" id="authorLink">
+        <nav class="nav-pages flex-center wow  fadeIn">
+            <div class="refs-box flex-center">
+                <a href="#footerLink" class="refs-box__link page-link" data-tooltip="Contacts">
+                </a>
+                <a href="#portfolioLink" class="refs-box__link page-link" data-tooltip="Portfolio">
+                </a>
+                <a href="#timelineLink" class="refs-box__link page-link"  data-tooltip="Timeline">
+                </a>
+            </div>
+            <div class="refs-decor__dotted"></div>
+            <div class="refs-decor flex-center">
+                <a href="#authorLink" class="refs-decor__active page-link" data-tooltip="Author">
+                </a>
+                <a href="#headLink" class="refs-box__link page-link" data-tooltip="Introduction" >
+                </a>
+            </div>
+            <div class="pages flex-center">
+                <span class="pages__name">02</span>
+                <span class="pages__name">/</span>
+                <span class="pages__name">05</span>
+            </div>
+        </nav>
+        {{> author }}
+    </section>
+    <section class="timeline-wrapp flex-row" id="timelineLink">
+    <nav class="nav-pages flex-center wow fadeIn">
+        <div class="refs-box flex-center">
+            <a href="#footerLink" class="refs-box__link page-link" data-tooltip="Contacts" >
+            </a>
+            <a href="#portfolioLink" class="refs-box__link page-link" data-tooltip="Portfolio">
+            </a>
+        </div>
+        <div class="refs-decor__dotted"></div>
+        <div class="refs-decor flex-center">
+            <a href="#timelineLink" class="refs-decor__active page-link" data-tooltip="Timeline">
+            </a>
+            <a href="#authorLink" class="refs-box__link page-link" data-tooltip="Author">
+            </a>
+            <a href="#headLink" class="refs-box__link page-link" data-tooltip="Introduction">
+            </a>
+        </div>
+        <div class="pages flex-center">
+            <span class="pages__name">03</span>
+            <span class="pages__name">/</span>
+            <span class="pages__name">05</span>
+        </div>
+    </nav>
+        {{> timeline }}
+    </section>
+    <section class="portfolio-wrapp" id="portfolioLink">
+    <nav class="nav-pages nav-pages_portfolio flex-center wow fadeIn">
+        <div class="refs-box flex-center">
+            <a href="#footerLink" class="refs-box__link page-link" data-tooltip="Contacts">
+            </a>
+            
+        </div>
+        <div class="refs-decor__dotted"></div>
+        <div class="refs-decor flex-center">
+            <a href="#portfolioLink" class="refs-decor__active page-link" data-tooltip="Portfolio">
+            </a>
+            <a href="#timelineLink" class="refs-box__link page-link" data-tooltip="Timeline">
+            </a>
+            <a href="#authorLink" class="refs-box__link page-link" data-tooltip="Author">
+            </a>
+            <a href="#headLink" class="refs-box__link page-link" data-tooltip="Introduction">
+            </a>
+        </div>
+        <div class="pages flex-center">
+            <span class="pages__name">04</span>
+            <span class="pages__name">/</span>
+            <span class="pages__name">05</span>
+        </div>
+    </nav>
+        {{> portfolio }}
+        {{> git-modal }}
+
+    </section>
+</main>

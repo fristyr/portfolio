@@ -1,0 +1,126 @@
+.skills {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 550px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 30px #26bf87;
+    background-color: var(--color-3);
+    z-index: 7;
+    padding-top: 1rem;
+    @media screen and (max-width: 600px) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.skill {
+    margin-bottom: 1.5rem;
+}
+
+.skills_active {
+    display: flex;
+}
+
+.skills__box {
+    overflow-y: auto;
+    max-height: 570px;
+    padding-right: 1rem;
+}
+
+.skills__butt {
+    position: absolute;
+    right: 4%;
+    top: 4%;
+    background-color: transparent;
+    border: 1px solid var(--color-1);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: var(--color-5);
+    cursor: pointer;
+}
+
+.skills__title {
+    font-family: "Dosis",sans-serif;
+    color: var(--color-5);
+    font-size: 3em;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+
+.skill__name {
+    font-family: "Muli",sans-serif;
+    color: var(--color-1);
+    font-size: 2.3em;
+    padding-bottom: 0.9rem;
+    position: relative;
+    padding-left: 3.5rem;
+}
+
+.skill__name::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 0;
+    z-index: 30;
+    background-repeat: no-repeat;
+}
+
+.skill__name_html::before {
+    background-image: url(../img/html5-brands.svg);
+}
+
+.skill__name_css::before {
+    background-image: url(../img/css3-alt-brands.svg);
+}
+
+.skill__name_js::before {
+    background-image: url(../img/js-square-brands.svg);
+}
+
+.skill__name_git::before {
+    background-image: url(../img/git-square-brands.svg);
+}
+
+.skill__name_gulp::before {
+    background-image: url(../img/gulp-brands.svg);
+}
+
+.skill__name_sass::before {
+    background-image: url(../img/sass-brands.svg);
+}
+
+.skill__descript {
+    font-family: "Dosis",sans-serif;
+    color: var(--color-5);
+    font-size: 1.2em;
+}
+
+/* width */
+.skills__box::-webkit-scrollbar {
+    width: 5px;
+
+  }
+  
+  /* Track */
+  .skills__box::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--color-5); 
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  .skills__box::-webkit-scrollbar-thumb {
+    background: var(--color-1); 
+    border-radius: 10px;
+  }
