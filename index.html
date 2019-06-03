@@ -7,7 +7,7 @@
 
         <meta name="keywords" content="frontend, frontend-developer, web-development, javascript">
         <meta name="description" content="junior frontend-developer Dionis Goncearuc. Web aplications">
-        <meta property="og:title" content="Frontend-разработчик Владимир Сысоев">
+        <meta property="og:title" content="Frontend-разработчик Denis Goncearuc">
         <meta property="og:url" content=""/>
         <meta property="og:image" content="img/person.png"/>
         <meta property="og:image:width" content="600"/>
@@ -26,7 +26,7 @@
         </div>
 
         <header class="head "  id="headLink">
-            <nav class="head-nav flex-center">
+            
                 <div class="logo">
                     <svg width="48" height="30" viewBox="0 0 48 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.5" y="0.5" width="44" height="29" stroke="#4BF2B5"/>
@@ -43,7 +43,7 @@
                   </svg>
         
                 </button>
-            </nav>
+           
             <section class="main-modal">
                 <button class="main-modal__close">X</button>
         
@@ -164,7 +164,8 @@
                         01 
                     </span>
                     <h1 class="intro__title">I <br> AM</h1>
-                    <p class="intro__subtitle">AN ASPIRING WEB <br> DEVELOPER</p>
+                     <p class="intro__subtitle"></p> 
+                    
                     <div class="scroll ">
                         <div class="scroll__sqr sqr-anim flex-center">
                             <svg width="22" height="13" viewBox="0 0 22 13" fill="#fff" xmlns="http://www.w3.org/2000/svg">
@@ -208,6 +209,8 @@
                     <div class="brief-box flex-row">
                         <div class="brief-box__info author-box flex-center">
                             <picture class="author-box__img">
+                                <source srcset="img/person_web-p.webp">
+                                <source srcset="img/person_mobile.png" media="(max-width: 860px)">
                                 <img src="img/person.png" alt="Fristyr" >
                             </picture>
                             <div class="author-box__text">
@@ -269,7 +272,7 @@
                             <p class="workflow-info__p">
                                 I understand the challenges 
                                 of working remotely. Here’s 
-                                a couple of things I’m good at:
+                                a couple of things <q class="workflow-info__q">I’m good at:</q>
                             </p>
                             <div class="workflow-info__title-box title-box">
                                 <span class="page-index index__two mobile-index  mobile-index_three">
@@ -666,6 +669,38 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M173.229 11.9421C172.942 12.227 172.942 12.6931 173.229 12.978L175.949 15.6824C176.236 15.9674 176.705 15.9674 176.991 15.6824C177.278 15.3975 177.278 14.9315 176.991 14.6465L174.271 11.9421C173.984 11.6572 173.515 11.6572 173.229 11.9421Z" fill="#D9D3C1"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M179.741 11.9421C180.027 12.227 180.027 12.6931 179.741 12.978L177.02 15.6824C176.734 15.9674 176.265 15.9674 175.978 15.6824C175.692 15.3975 175.692 14.9315 175.978 14.6465L178.699 11.9421C178.985 11.6572 179.454 11.6572 179.741 11.9421Z" fill="#D9D3C1"/>
                         </svg>    </div>
+                    <section class="skills flex-center">
+                        <h2 class="skills__title">My skills</h2>
+                        <button class="skills__butt">X</button>
+                        <div class="skills__box">
+                            <article class="skill">
+                                <h3 class="skill__name skill__name_html">HTML5</h3>
+                                <p class="skill__descript">Valid and semantic markup, BEM naming.</p>
+                            </article>
+                            <article class="skill">
+                                <h3 class="skill__name skill__name_css">CSS3</h3>
+                                <p class="skill__descript">Adaptive and cross-browser layout, Flex Box, Grid CSS.</p>
+                            </article>
+                            <article class="skill">
+                                <h3 class="skill__name skill__name_js">JavaScript</h3>
+                                <p class="skill__descript">ES5/ES6+, Ajax, trying to write clean, easily maintained code.</p>
+                            </article>
+                            <article class="skill">
+                                <h3 class="skill__name skill__name_git">Git</h3>
+                                <p class="skill__descript">I use git as a version control system for my projects.</p>
+                            </article>
+                            <article class="skill">
+                                <h3 class="skill__name skill__name_gulp">Gulp</h3>
+                                <p class="skill__descript">Convenient project build tool.</p>
+                            </article>
+                            <article class="skill">
+                                <h3 class="skill__name skill__name_sass">SASS</h3>
+                                <p class="skill__descript">Sass is a stylesheet language that’s compiled to CSS.</p>
+                            </article>
+                            
+                            
+                        </div>
+                    </section>
                 </article>
             </section>
             <section class="portfolio-wrapp" id="portfolioLink">
@@ -867,15 +902,15 @@
                 <form  class="postcard" action="https://formcarry.com/s/xGoJ0MbDvPM" method="POST" accept-charset="UTF-8">
                   <div class="form-row">
                     <label for="name" class="form-row__lb">Your name</label>
-                    <input type="text" name='name' id="name" class="form-row__inp"  >
+                    <input type="text" name='name' id="name" class="form-row__inp" required >
                   </div>
                   <div class="form-row">
                     <label for="email" class="form-row__lb">Your email</label>
-                    <input type="email" name='email' id="email" class="form-row__inp"  >
+                    <input type="email" name='email' id="email" class="form-row__inp" required >
                   </div>
                   <div class="form-row">
                     <label for="message" class="form-row__lb">Your message</label>
-                    <textarea rows="5" name='text' id="message" class="form-row__inp"  ></textarea>
+                    <textarea rows="5" name='text' id="message" class="form-row__inp" required ></textarea>
                   </div>
                   <div class="form-row">
                     <input type="submit" value="Send" class="form-row__submit">
