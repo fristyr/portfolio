@@ -1,4 +1,4 @@
-# vue-transition
+# Fristyr portfolio
 
 ## Project setup
 ```
