@@ -944,6 +944,7 @@ html.mfp-helper {
   margin-bottom: 60px;
 }
 
+
 .main-content.about .inner-content .content #personal-info h5:after,
 .main-content.about .inner-content .content #services h5:after {
   content: '';
@@ -3304,7 +3305,7 @@ html.mfp-helper {
   }
 
   .main-content.about .inner-content .content #services .row {
-    padding: 50px 40px 0;
+    padding: 50px 60px 50px;
     margin-bottom: 80px;
   }
 
