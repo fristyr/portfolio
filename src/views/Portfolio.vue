@@ -44,7 +44,12 @@
           </div>
           <!-- Personal Info Ends -->
           <!-- Services Starts -->
-          <div id="services">
+          <div id="services" class="portfolio-content" >
+            <button class="btn--normal btn-portfolio--left" @click="prevSlide" >
+            </button>
+            <button class="btn--normal btn-portfolio--right" @click="nextSlide" >
+            </button>
+
             <!-- Services Heading Starts -->
             <!-- Services Heading Ends -->
             <div class="row no-gutters portfolio--wrapp">
@@ -59,15 +64,15 @@
                       :alt="item.imageAlt"
                     />
                     <div class="card-body">
-                      <div class="card-text" v-html="item.text"></div>
-                      <a :href="item.link" class="btn btn--normal">
-                        {{ item.linkText }}
+                      <div class="card-text pl-3" v-html="item.text"></div>
+                      <a :href="item.link" class="btn btn--normal ml-3" target="_blank" >
+                        Visit project
                       </a>
                     </div>
                   </div>
                 </swiper-slide>
-                <div class="swiper-button-prev" @click="prevSlide" slot="button-prev"></div>
-                <div class="swiper-button-next" @click="nextSlide" slot="button-next"></div>
+                <!-- <div class="swiper-button-prev" @click="prevSlide" slot="button-prev"></div>
+                <div class="swiper-button-next" @click="nextSlide" slot="button-next"></div> -->
               </swiper>
               
             </div>

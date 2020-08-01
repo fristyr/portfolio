@@ -1002,6 +1002,11 @@
   border-color: #14263a;
 }
 
+.portfolio-content {
+  position: relative;
+
+}
+
 .btn--normal {
   background: #1d3047;
   color: #fff;
@@ -1011,18 +1016,70 @@
   font-weight: normal;
   padding: 10px;
   transition: 250ms;
+  cursor: pointer;
 }
-
 
 .btn--normal:hover {
   background: #26ba70;
-
 }
 
+.btn-portfolio--left,
+.btn-portfolio--right {
+  position: absolute;
+  top: 50%;
+  z-index: 50;
+  padding: 15px;
+}
 
-.swiper-button-prev:after, .swiper-button-next:after {
+.btn-portfolio--left::before,
+.btn-portfolio--right::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 25px;
+}
+
+.btn-portfolio--left::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f104';
+}
+
+.btn-portfolio--right::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f105';
+}
+
+.btn-portfolio--left {
+  left: 10px;
+}
+.btn-portfolio--right {
+  right: 10px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
   color: #26ba70;
-
+  font-size: 20px;
+  font-weight: bolder;
 }
 
+.card-text p {
+  margin: 0;
+}
 
+@media (max-width: 768px) {
+  .btn-portfolio--left {
+    left: 0px;
+  }
+  .btn-portfolio--right {
+    right: 0px;
+  }
+}
